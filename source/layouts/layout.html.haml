@@ -1,12 +1,27 @@
-!!!5
+!!!
 %html
   %head
-    %meta{:charset => "utf-8"}/
-    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, minimum-scale=0.5 maximum-scale=1.0"}/
+    %meta{:charset => "utf-8"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
-    / Use title if it's in the page YAML frontmatter
-    %title= current_page.data.title || "The Middleman"
-    = stylesheet_link_tag "application", :media => "all"
-    = javascript_include_tag  "all"
-  %body{:class => page_classes}
-    = yield
+    %title Smooth Sliding Mobile Nav - HTML5/CSS3 - Damo
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    = javascript_include_tag "http://modernizr.com/downloads/modernizr-latest.js"
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+  %body
+    .canvas-wrapper
+      %nav.off-canvas-nav
+        %a{:href => '#'} click me
+        %a{:href => '#'} click me
+        %a{:href => '#'} click me
+      %section.main-container
+        %header.site-header
+          .logo Logo
+          %nav.site-nav
+            .canvas-toggle
+              %a{:href => '#'}
+        %section.site-content
+          = yield
+        %footer.site-footer
+          This is a footer

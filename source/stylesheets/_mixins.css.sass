@@ -1,0 +1,9 @@
+=css3calc($attribute, $value, $default-width: 100%, $lr: false)
+  @if $lr == true
+    #{$attribute}: -webkit-calc(#{$default-width} - #{$value})
+    #{$attribute}: calc(#{$default-width} - #{$value})
+  @else
+    #{$attribute}: 0 -webkit-calc(#{$default-width} - #{$value})
+    #{$attribute}: 0 calc(#{$default-width} - #{$value})
+
+
