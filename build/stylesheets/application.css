@@ -1,0 +1,292 @@
+/* line 28, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 36, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 40, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+body {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 45, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+/* line 53, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+img, object, embed {
+  max-width: 100%; }
+
+/* line 57, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+img {
+  border-style: none;
+  border-color: transparent;
+  border-width: 0; }
+
+/* line 66, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 70, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+blockquote, q {
+  quotes: none; }
+  /* line 73, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+/* line 79, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+  /* line 85, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+  a:focus {
+    text-decoration: underline;
+    outline: none; }
+
+/* line 91, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 96, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* line 108, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+/* line 113, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+input, textarea, select, button {
+  font-family: inherit;
+  font-weight: inherit;
+  background-color: #fff;
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+/* line 122, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+table {
+  font-size: inherit;
+  font: 100%; }
+
+/* line 127, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+/* line 133, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+sup {
+  top: -0.5em; }
+
+/* line 137, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 143, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* line 148, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+.clickable, label, input[type=button], input[type=submit] {
+  cursor: pointer; }
+
+/* line 163, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+button {
+  cursor: pointer;
+  margin: 0;
+  width: auto;
+  overflow: visible; }
+
+/* line 170, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+a.button {
+  display: inline-block; }
+
+/* line 176, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* line 183, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+a:link {
+  -webkit-tap-highlight-color: #b3d6dc; }
+
+/* line 187, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+ins {
+  background-color: #facb47;
+  color: black;
+  text-decoration: none; }
+
+/* line 193, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+mark {
+  background-color: #facb47;
+  color: #474747;
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 200, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+::selection {
+  background: #fcb3bd;
+  color: #474747; }
+
+/* line 205, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/resets/_toadstool.scss */
+::-moz-selection {
+  background: #fcb3bd;
+  color: #474747; }
+
+/* line 6, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/stipe/_extends.scss */
+.main-container {
+  zoom: 1; }
+  /* line 271, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/stipe/_mixins.scss */
+  .main-container:before, .main-container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  /* line 277, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/stipe/_mixins.scss */
+  .main-container:after {
+    clear: both; }
+
+/* line 8, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/typography/_extends.scss */
+.off-canvas-nav a {
+  font-size: 3.83333em;
+  line-height: 1.17391em;
+  margin-bottom: 0.3913em;
+  color: #333333;
+  font-weight: normal;
+  font-family: "Helvetica Neue", Arial, sans-serif; }
+
+/* line 27, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/typography/_extends.scss */
+.off-canvas-nav a {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em; }
+
+/* line 1, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_typography.css.sass */
+p {
+  line-height: 1.5em;
+  margin-bottom: 1em; }
+
+/* line 3, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+.canvas-wrapper {
+  position: relative;
+  overflow: hidden; }
+
+/* line 7, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+.main-container {
+  -moz-transition: left 0.3s ease 0s;
+  -webkit-transition: left 0.3s ease 0s;
+  -o-transition: left 0.3s ease 0s;
+  -ms-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s;
+  position: relative;
+  left: 0; }
+  /* line 15, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+  .toggle-canvas .main-container {
+    left: -75%; }
+
+/* line 18, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+.canvas-toggle {
+  display: none;
+  float: right; }
+  /* line 21, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+  .canvas-toggle a {
+    display: block; }
+    /* line 23, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+    .canvas-toggle a:before {
+      content: "O";
+      background-color: orange;
+      color: white;
+      display: inline-block;
+      font-size: 3.125em;
+      line-height: 1.8em;
+      padding: 0 0.56em; }
+  @media screen and (max-width: 40em) {
+    /* line 18, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+    .canvas-toggle {
+      display: block; } }
+
+/* line 34, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+.off-canvas-nav {
+  -moz-transition: left 0.3s ease 0s;
+  -webkit-transition: left 0.3s ease 0s;
+  -o-transition: left 0.3s ease 0s;
+  -ms-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s;
+  position: absolute;
+  width: 75%;
+  left: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  padding: 0.625em 0;
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+  color: white;
+  text-shadow: 0 0 0.5em #333333;
+  box-shadow: inset 0.625em 0 1.25em 0 rgba(51, 51, 51, 0.9); }
+  /* line 46, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+  .off-canvas-nav a {
+    color: white;
+    display: block;
+    line-height: 2.5em;
+    padding: 0 1.25em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-width: 0 0 1px 0;
+    margin-bottom: 0; }
+  /* line 55, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_design.css.sass */
+  .toggle-canvas .off-canvas-nav {
+    left: 25%; }
+
+/* line 1, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_site.css.sass */
+.site-header, .site-footer {
+  width: 100%;
+  float: left;
+  height: 5.6875em;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #5c5c5c;
+  margin-bottom: 1.25em; }
+
+/* line 11, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_site.css.sass */
+.site-content {
+  padding: 0 -webkit-calc(50% - 30em);
+  padding: 0 calc(50% - 30em); }
+
+/* line 16, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_site.css.sass */
+.site-footer {
+  border-width: 1px 0 0 0;
+  margin-top: 1.25em;
+  padding: 1.25em 0;
+  text-align: center; }
+
+/* line 24, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_site.css.sass */
+.site-nav, .logo {
+  width: 50%;
+  float: left; }
+
+/* line 28, /Users/dale/Dropbox/blackfalcon/experiments/middleman-default/source/stylesheets/_site.css.sass */
+.logo {
+  font-size: 4em;
+  line-height: 1.40625em;
+  padding-left: 0.15625em; }
+
+@media screen and (max-width: 40em) {
+  /* line 28, /Users/dale/.rvm/gems/ruby-1.9.3-p385@middleman/gems/stipe-0.0.6.0/stylesheets/stipe/grid/_extends.scss */
+  .site-content {
+    float: left;
+    margin-left: 3.125%;
+    margin-right: 3.125%;
+    width: 93.75%; } }
