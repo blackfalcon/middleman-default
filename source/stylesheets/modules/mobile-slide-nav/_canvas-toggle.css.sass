@@ -1,0 +1,17 @@
+// Typically this will be placed in the header of your design.
+
+.canvas-toggle
+  display: none
+  float: right
+  a
+    display: block
+    &:before
+      content: 'O'
+      background-color: orange
+      color: $white
+      display: inline-block
+      font-size: em(50)
+      line-height: em(90, 50)
+      padding: 0 em(28, 50)
+  @media #{$mobile}
+    display: block

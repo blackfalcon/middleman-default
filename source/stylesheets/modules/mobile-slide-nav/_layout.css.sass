@@ -1,0 +1,16 @@
+// General canvas layout setting so that off-canvas blocks do not appear in the view
+.canvas-wrapper
+  position: relative
+  overflow: hidden
+
+.main-container
+  @extend %clearfix
+  // transition must be placed in the parent container from the animation
+  +transition(all, 0.6s, ease, 0s)
+
+  position: relative
+
+  // must have rule or Mozilla won't transition property
+  left: 0
+  .toggle-canvas &
+    @extend %animation
