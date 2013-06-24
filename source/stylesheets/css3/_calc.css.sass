@@ -51,7 +51,7 @@
   @else if $value == 0
     #{$attribute}: 0 calc(#{$width} #{$operator} #{$value2})
   @else if $value2 == 0
-    #{$attribute}: calc(#{$width} #{$operator} #{$value}) 0
+    #{$attribute}: calc(#{$width} #{$operator} #{$value}) $value2
   @else if $value2 == $value
     #{$attribute}: calc(#{$width} #{$operator} #{$value})
   @else
