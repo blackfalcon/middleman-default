@@ -45,14 +45,20 @@
 //   width: calc(10% - 4px) / 2 + 3px);
 // }
 
-=calc($attribute, $value, $value2: false, $width: 100%, $operator: '-')
-  @if $value2 == false
-    #{$attribute}: calc(#{$width} #{$operator} #{$value})
-  @else if $value == 0
-    #{$attribute}: 0 calc(#{$width} #{$operator} #{$value2})
-  @else if $value2 == 0
-    #{$attribute}: calc(#{$width} #{$operator} #{$value}) $value2
-  @else if $value2 == $value
-    #{$attribute}: calc(#{$width} #{$operator} #{$value})
-  @else
-    #{$attribute}: calc(#{$width} #{$operator} #{$value}) calc(#{$width} #{$operator} #{$value2})
+@mixin calc($attribute, $value, $value2: false, $width: 100%, $operator: "-") {
+  @if $value2 == false {
+    #{$attribute}: calc(#{$width} #{$operator} #{$value});
+  }
+  @else if $value == 0 {
+    #{$attribute}: 0 calc(#{$width} #{$operator} #{$value2});
+  }
+  @else if $value2 == 0 {
+    #{$attribute}: calc(#{$width} #{$operator} #{$value}) $value2;
+  }
+  @else if $value2 == $value {
+    #{$attribute}: calc(#{$width} #{$operator} #{$value});
+  }
+  @else {
+    #{$attribute}: calc(#{$width} #{$operator} #{$value}) calc(#{$width} #{$operator} #{$value2});
+  }
+}
