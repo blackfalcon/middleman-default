@@ -1,0 +1,19 @@
+@import "stipe/typography/mixins"; // Do not edit, needed to pull in necessary mixin
+$webfont_directory: "/fonts/" !default; // edit this directory in the '_config.scss' file if needed.
+// -----------------------------------------------------------
+
+// Install your own
+// -----------------------------------------------------------
+//@font-face {
+//	@include font-face ($font_family: [name of family], $font-file:  [name of file], $font_weight: [value], $font_style: [value]);
+//}
+
+
+@font-face {
+  @include font-face ($font_family: 'ico-fonts', $font-file: 'ico-fonts');
+}
+
+
+// Install google fonts
+// -----------------------------------------------------------
+// @import url(http://fonts.googleapis.com/css?family=Emblema+One);

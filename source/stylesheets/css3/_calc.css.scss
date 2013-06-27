@@ -1,0 +1,64 @@
+// Calc mixin requires two arguments, $attribute and $value
+// $value2 $width and $operator are optional
+
+// Common use case is
+// block
+//   +calc(padding, em(20))
+
+// output CSS
+// block {
+//   padding: calc(100% - 1.66667em);
+// }
+
+// If different values are required for either top/bottom or left/right, the mixin will evaluate if the variable is set or not and if that values equal each other.
+
+// Common use cases are
+// block
+//   +calc(padding, 0, em(20))
+//   +calc(padding, em(20), 0)
+//   +calc(padding, em(20), em(20))
+
+// output CSS
+// block {
+//   padding: 0 calc(100% - 1.66667em);
+//   padding: calc(100% - 1.66667em) 0;
+//   padding: calc(100% - 1.66667em);
+// }
+
+// If you require adjustment to the default calc width you must either pass in the thrid argument to pass in the fourth or refer to the forth by keyword
+
+// block
+//   +calc(padding, 0, em(20), $dimension:50%)
+
+// output CSS
+// block {
+//   padding: 0 calc(50% - 1.66667em);
+// }
+
+// The calc function can accept a complex series of values, in this case the $value argument of the mixin is capable of accpeting a string.
+
+// block
+//   +calc(width, '4px) / 2 + 3px', $dimension: 10%)
+
+// output CSS
+// block {
+//   width: calc(10% - 4px) / 2 + 3px);
+// }
+
+@mixin calc($attribute, $value, $value2: false, $width: 100%, $operator: "-") {
+  @if $value2 == false {
+    #{$attribute}: calc(#{$width} #{$operator} #{$value});
+  }
+  @else if $value == 0 {
+    #{$attribute}: 0 calc(#{$width} #{$operator} #{$value2});
+  }
+  @else if $value2 == 0 {
+    #{$attribute}: calc(#{$width} #{$operator} #{$value}) $value2;
+  }
+  @else if $value2 == $value {
+    #{$attribute}: calc(#{$width} #{$operator} #{$value});
+  }
+  @else {
+    #{$attribute}: calc(#{$width} #{$operator} #{$value}) calc(#{$width} #{$operator} #{$value2});
+  }
+}
