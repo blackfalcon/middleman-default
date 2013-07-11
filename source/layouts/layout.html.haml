@@ -8,7 +8,7 @@
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "http://modernizr.com/downloads/modernizr-latest.js"
     = javascript_include_tag "application", "data-turbolinks-track" => true
-  %body
+  %body{"ng-app" => ""}
     .canvas-wrapper
       %nav.off-canvas-nav
         %a{:href => '#'} click me
